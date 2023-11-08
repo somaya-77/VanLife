@@ -6,20 +6,23 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: #FFF7ED;
 }
 
 header {
+  position: fixed;
   width: 100%;
   height: 112px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 30px;
+  background: #FFF7ED;
+  border-bottom: 1px solid #000;
 }
 
 a {
   text-decoration: none;
-
 }
 
 nav a {
@@ -37,8 +40,11 @@ nav a {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
   background: #252525;
   height: 75px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,6 +55,8 @@ footer {
 
 /* //////////// HOME ////////////// */
 .home {
+  position: relative;
+  top: 112px;
   height: calc(100vh - (112px + 75px));
   background-image: url('image 54.png');
   background-size: cover;
@@ -90,3 +98,10 @@ footer {
   border-radius: 5px;
 
 }
+
+.activeStyle {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #161616;
+}
+
