@@ -20,13 +20,17 @@ header {
   background: #FFF7ED;
   border-bottom: 1px solid #000;
 }
-
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 a {
   text-decoration: none;
 }
 
 nav a {
-  margin-left: 15px;
+  margin-left: 20px;
   color: #4D4D4D;
   font-size: 16px;
 }
@@ -58,7 +62,7 @@ footer {
   position: relative;
   top: 112px;
   height: calc(100vh - (112px + 75px));
-  background-image: url('image 54.png');
+  background-image: url('https://github.com/scrimba/learn-react-router-6/blob/main/01%20-%20Introduction%20to%20React%20Router/01%20-%20Introduction%20to%20React%20Router%206/assets/images/home-hero.png?raw=true');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -105,3 +109,30 @@ footer {
   color: #161616;
 }
 
+/* error page */
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.error p {
+  color: #161616;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.error a {
+  border-radius: 4.983px;
+  background: #161616;
+  color: #FFF;
+  text-align: center;
+  padding: 7px 35px;
+  font-size: 18px;
+  font-weight: 700;
+
+}
